@@ -1,0 +1,13 @@
+<!-- views/cards-show.handlebars -->
+
+<a href="/">Back to Home</a>
+
+<h1>{{card.name}}</h1>
+<h2>{{card.missingFrom}}</h2>
+
+<p><a href="/cards/{{card._id}}/edit">Edit</a></p>
+
+<!-- Delete button -->
+<p><form method="POST" action="/cards/{{card._id}}?_method=DELETE">
+    <button type="submit">Delete</button>
+</form></p>
