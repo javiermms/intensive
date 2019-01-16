@@ -27,6 +27,7 @@ app.use(bodyParser.json());
 
 /** Require controllers */
 require('./controllers/cards')(app);
+require('./controllers/parties')(app);
 
 /**Exports */
 module.exports = app;

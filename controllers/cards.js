@@ -70,17 +70,6 @@ module.exports = (app) => {
         })
     })
 
-    // SEARCH PARTIES
-    app.get('/sp', (req, res) => {
-        Card.find()
-        .then(cards => {
-          res.render('sp', { cards: cards });
-        })
-        .catch(err => {
-          console.log(err);
-        })
-    })
-
     // CONTACT
     app.get('/contact', (req, res) => {
         res.render('contact', {});

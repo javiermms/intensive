@@ -1,10 +1,10 @@
-<!-- views/cards-edit.handlebars -->
+<!-- views/parties-new.handlebars -->
+<form method="POST" action="/parties">
+    {{> parties-form}}
 
-<form method="POST" action="/cards/{{card._id}}?_method=PUT">
-    {{> cards-form}}
-  
     <!-- BUTTON -->
     <div class="form-group float-right">
         <button type="submit" class="btn btn-primary">Submit</button>
     </div> 
+
 </form>

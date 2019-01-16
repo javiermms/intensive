@@ -14,10 +14,16 @@ const cardSchema = new Schema({
     dateOfBirth: {
         type: String
     },
-    sex: {
+    race: {
         type: String
     },
-    race: {
+    gender: {
+        type: String
+    },
+    height: {
+        type: String
+    },
+    weight: {
         type: String
     },
     hairColor: {
@@ -26,10 +32,7 @@ const cardSchema = new Schema({
     eyeColor: {
         type: String
     },
-    height: {
-        type: String
-    },
-    weight: {
+    uploadPicture: {
         type: String
     },
     details: {

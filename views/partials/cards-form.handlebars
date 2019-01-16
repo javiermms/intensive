@@ -1,61 +1,77 @@
 <h1>Missing Persons Form</h1>
 <br>
-<form>
-    <div class="form-group">
-    <label for="name">Name:</label>
-    <input type="text" class="form-control" name="name" value="{{card.name}}"/>
+<fieldset>
+  <div class="form-group">
+    <label for="card-name">Name:</label>
+    <input class="form-control" id="card-name" type="text" name="name" value="{{card.name}}"/>
   </div>
+
    <div class="form-group">
-    <label for="missingFrom">Missing From:</label>
-    <input type="text" class="form-control" name="missingFrom" value="{{card.missingFrom}}"/>
+    <label for="card-missingFrom">Missing From:</label>
+    <input class="form-control" id="card-missingFrom" type="text" name="missingFrom" value="{{card.missingFrom}}"/>
   </div>
+
   <div class="form-group">
-    <label for="missingSince">Missing since:</label>
-    <input type="text" class="form-control" type="text" name="missingSince" value="{{card.missingSince}}"/>
+    <label for="card-missingSince">Missing since:</label>
+    <input class="form-control" id="card-missingSince" type="text" name="missingSince" value="{{card.missingSince}}"/>
   </div>
+
   <div class="form-group">
-    <label for="dateofBirth">Date of Birth:</label>
-    <input type="text" class="form-control" type="text" name="dateOfBirth" value="{{card.dateOfBirth}}"/>
+    <label for="card-dateofBirth">Date of Birth:</label>
+    <input class="form-control" id="card-dateOfBirth" type="text" name="dateOfBirth" value="{{card.dateOfBirth}}"/>
   </div>
+
   <div class="form-group">
-    <label for="race">Race:</label>
-    <input type="text" class="form-control" type="text" name="race" value="{{card.race}}"/>
+    <label for="card-race">Race:</label>
+    <input class="form-control" id="card-race" type="text" name="race" value="{{card.race}}"/>
   </div>
-<div class="form-group">
-    <label for="gender">Gender</label>
-    <select class="form-control" id="gender">
+
+  <div class="form-group">
+    <label for="card-gender">Gender</label>
+    <select class="form-control" id="card-gender" name="gender" value="{{card.gender}}"/>
       <option>Male</option>
       <option>Female</option>
     </select>
   </div> 
+
   <div class="form-group">
-    <label for="height">Height:</label>
-    <input type="text" class="form-control"  name="height" value="{{card.height}}"/>
+    <label for="card-height">Height:</label>
+    <input class="form-control" id="card-height" type="text" name="height" value="{{card.height}}"/>
   </div>
+
   <div class="form-group">
-    <label for="weight">Weight:</label>
-    <input type="text" class="form-control"  name="weight" value="{{card.weight}}"/>
+    <label for="card-weight">Weight:</label>
+    <input class="form-control" id="card-weight" type="text" name="weight" value="{{card.weight}}"/>
   </div>
-    <div class="form-group">
-    <label for="hairColor">Hair Color</label>
-    <select class="form-control" id="hairColor">
+
+  <div class="form-group">
+    <label for="card-hairColor">Hair Color</label>
+    <select class="form-control" id="card-hairColor" name="hairColor" value="{{card.hairColor}}"/>
       <option>Brown</option>
       <option>Black</option>
       <option>Blonde</option>
       <option>Red</option>
     </select>
   </div>
+
   <div class="form-group">
-    <label for="eyeColor">Eye Color</label>
-    <select class="form-control" id="eyeColor">
+    <label for="card-eyeColor">Eye Color</label>
+    <select class="form-control" id="card-eyeColor" name="eyeColor" value="{{card.eyeColor}}"/>
       <option>Brown</option>
       <option>Green</option>
       <option>Blue</option>
       <option>Hazel</option>
     </select>
   </div> 
+
   <div class="form-group">
-    <label for="details">Details on Disapperance:</label>
-    <textarea class="form-control" id="card-details" rows="3">{{card.details}}</textarea>
+    <label for="card-uploadPicture">Upload Picture:</label>
+    <input class="form-control" id="card-uploadPicture" type="text" name="uploadPicture" value="{{card.uploadPicture}}"/>
   </div>
-</form>
+
+  <div class="form-group">
+    <label for="card-details">Details on Disapperance:</label>
+    <textarea class="form-control" id="card-details" name="details" rows="3">{{card.details}}</textarea>
+  </div>
+
+</fieldset>

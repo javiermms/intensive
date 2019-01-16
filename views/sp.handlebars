@@ -4,13 +4,16 @@
 
 <!-- BUTTON -->
 <div class="form-group">
-    <button type="submit" class="btn btn-primary"><a href=""></a>Create Search Party</button>
+    <a href="/parties/new">
+    <button type="submit" class="btn btn-primary">Create a Search Party</button>
+    </a>
 </div>
+
 <br>
 <br>
 
-{{!-- {{#each cards}}
-  <h2><a href="/cards/{{this._id}}">{{this.name}}</a></h2>
-  <small>{{this.missingFrom}}</small>
-{{/each}} --}}
+{{#each cards}}
+  <h2><a href="/parties/{{this._id}}">{{this.title}}</a></h2>
+  <small>{{this.location}}</small>
+{{/each}}
 

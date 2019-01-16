@@ -1,0 +1,17 @@
+<!-- views/parties-show.handlebars -->
+<br>
+<br>
+<br>
+<br>
+
+<a href="/">Back to Home</a>
+
+<h1>{{party.title}}</h1>
+<h2>{{party.location}}</h2>
+
+<p><a href="/parties/{{party._id}}/edit">Edit</a></p>
+
+<!-- Delete button -->
+<p><form method="POST" action="/parties/{{party._id}}?_method=DELETE">
+    <button type="submit">Delete</button>
+</form></p>
