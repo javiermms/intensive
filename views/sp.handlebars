@@ -3,7 +3,7 @@
 <br>
 
 <!-- BUTTON -->
-<div class="form-group">
+<div class="form-group float-right">
     <a href="/parties/new">
     <button type="submit" class="btn btn-primary">Create a Search Party</button>
     </a>
@@ -12,8 +12,9 @@
 <br>
 <br>
 
-{{#each cards}}
-  <h2><a href="/parties/{{this._id}}">{{this.title}}</a></h2>
-  <small>{{this.location}}</small>
-{{/each}}
+{{#each parties}}
 
+  <h2><a href="/parties/{{party._id}}">{{party.title}}</a></h2>
+  <small>{{this.location}}</small>
+
+{{/each}}

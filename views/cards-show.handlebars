@@ -4,14 +4,44 @@
 <br>
 <br>
 
-<a href="/">Back to Home</a>
+<a href="/mp" class="btn btn-primary">Back to Home</a>
 
-<h1>{{card.name}}</h1>
-<h2>{{card.missingFrom}}</h2>
+<br>
+<br>
+<div class="row">
+<div class="col-md-4">
+<img src="{{card.uploadPicture}}" class="card-img-top" alt="missing person" class="img-responsive">
+<br>
+<br>
+</div>
+</div>
+<h2>Name: </h2>
+<p>{{card.name}}</p>
+<h2>Missing From: </h2>
+<p>{{card.missingFrom}}</p>
+<h2>Missing Since: </h2>
+<p>{{card.missingSince}}</p>
+<h2>Date of Birth: </h2>
+<p>{{card.dateOfBirth}}</p>
+<h2>Race: </h2>
+<p>{{card.race}}</p>
+<h2>Gender: </h2>
+<p>{{card.gender}}</p>
+<h2>Height: </h2>
+<p>{{card.height}}</p>
+<h2>Weight: </h2>
+<p>{{card.weight}}</p>
+<h2>Hair Color: </h2>
+<p>{{card.hairColor}}</p>
+<h2>Eye Color: </h2>
+<p>{{card.eyeColor}}</p>
+<h2>Notes On Dissapearance: </h2>
+<p>{{card.details}}</p>
 
-<p><a href="/cards/{{card._id}}/edit">Edit</a></p>
+
+<a href="/cards/{{card._id}}/edit" class="btn btn-primary">Edit</a>
 
 <!-- Delete button -->
 <p><form method="POST" action="/cards/{{card._id}}?_method=DELETE">
-    <button type="submit">Delete</button>
+    <button type="submit" class="btn btn-primary">Delete</button>
 </form></p>

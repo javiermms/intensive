@@ -5,7 +5,7 @@ module.exports = (app) => {
     // SEARCH PARTIES
     app.get('/sp', (req, res) => {
         Party.find()
-        .then(cards => {
+        .then(parties => {
           res.render('sp', {});
         })
         .catch(err => {
@@ -47,7 +47,7 @@ module.exports = (app) => {
     // UPDATE
     app.put('/parties/:id', (req, res) => {
         Party.findByIdAndUpdate(req.params.id, req.body)
-        .then(card => {
+        .then(party => {
             res.redirect(`/parties/${party._id}`)
         })
         .catch(err => {
@@ -59,7 +59,7 @@ module.exports = (app) => {
     app.delete('/parties/:id', function (req, res) {
         console.log("DELETE card")
         Party.findByIdAndRemove(req.params.id).then((party) => {
-        res.redirect('/');
+        res.redirect('/sp');
         }).catch((err) => {
         console.log(err.message);
         })

@@ -4,14 +4,14 @@
 <br>
 <br>
 
-<a href="/">Back to Home</a>
+<a href="/" class="btn btn-primary float">Back to Home</a>
 
 <h1>{{party.title}}</h1>
 <h2>{{party.location}}</h2>
 
-<p><a href="/parties/{{party._id}}/edit">Edit</a></p>
+<p><a href="/parties/{{party._id}}/edit" class="btn btn-primary">Edit</a></p>
 
 <!-- Delete button -->
 <p><form method="POST" action="/parties/{{party._id}}?_method=DELETE">
-    <button type="submit">Delete</button>
+    <button type="submit" class="btn btn-primary">Delete</button>
 </form></p>

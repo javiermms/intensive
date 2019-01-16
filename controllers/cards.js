@@ -53,7 +53,7 @@ module.exports = (app) => {
     app.delete('/cards/:id', function (req, res) {
         console.log("DELETE card")
         Card.findByIdAndRemove(req.params.id).then((card) => {
-        res.redirect('/');
+        res.redirect('/mp');
         }).catch((err) => {
         console.log(err.message);
         })

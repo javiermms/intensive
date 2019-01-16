@@ -3,7 +3,7 @@
 <br>
 
 <!-- BUTTON -->
-<div class="form-group">
+<div class="form-group float-right">
     <a href="/cards/new">
     <button type="submit" class="btn btn-primary">Add Missing Person</button>
     </a>
@@ -13,7 +13,16 @@
 <br>
 
 {{#each cards}}
-  <h2><a href="/cards/{{this._id}}">{{this.name}}</a></h2>
-  <small>{{this.missingFrom}}</small>
+  
+  <div class="card" style="width: 18rem;">
+    <img src="{{this.uploadPicture}}" class="card-img-top" alt="missing person">
+      <div class="card-body">
+        <h5 class="card-title">{{this.name}}</h5>
+        <p class="card-text">{{this.details}}</p>
+        <a href="/cards/{{this._id}}" class="btn btn-primary">See More</a>
+      </div>
+  </div>
+    
 {{/each}}
+
 
