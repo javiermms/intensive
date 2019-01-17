@@ -33,7 +33,7 @@ require('./controllers/parties')(app);
 module.exports = app;
 
 /** Port listener */
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, function() {
     console.log('App Listening on Port => 3000')
 
 });
