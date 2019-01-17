@@ -6,7 +6,7 @@ module.exports = (app) => {
     app.get('/sp', (req, res) => {
         Party.find()
         .then(parties => {
-          res.render('sp', {});
+          res.render('sp', { parties: parties});
         })
         .catch(err => {
           console.log(err);

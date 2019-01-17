@@ -4,10 +4,27 @@
 <br>
 <br>
 
-<a href="/" class="btn btn-primary float">Back to Home</a>
+
+
+<a href="/sp" class="btn btn-primary float">Back to Search Parties</a>
+
+<br>
+<br>
+
+<div class="row">
+    <div class="col-md-4">
+        <img src="{{party.uploadPicture}}" class="card-img-top" alt="location" class="img-responsive">
+        <br>
+        <br>
+    </div>
+</div>
+
+
 
 <h1>{{party.title}}</h1>
+<h2>{{party.time}}</h2>
 <h2>{{party.location}}</h2>
+<p>{{party.details}}</p>
 
 <p><a href="/parties/{{party._id}}/edit" class="btn btn-primary">Edit</a></p>
 

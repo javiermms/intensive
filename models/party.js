@@ -11,6 +11,9 @@ const partySchema = new Schema({
     time: {
         type: String
     },
+    uploadPicture: {
+        type: String
+    },
     details: {
         type: String
     }

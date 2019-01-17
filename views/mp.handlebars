@@ -13,16 +13,20 @@
 <br>
 
 {{#each cards}}
-  
-  <div class="card" style="width: 18rem;">
-    <img src="{{this.uploadPicture}}" class="card-img-top" alt="missing person">
-      <div class="card-body">
-        <h5 class="card-title">{{this.name}}</h5>
-        <p class="card-text">{{this.details}}</p>
-        <a href="/cards/{{this._id}}" class="btn btn-primary">See More</a>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 mt-4">
+        <div class="card">
+          <img src="{{this.uploadPicture}}" class="card-img-top" alt="missing person">
+            <div class="card-body">
+              <h5 class="card-title">{{this.name}}</h5>
+              <p class="card-text">{{this.details}}</p>
+              <a href="/cards/{{this._id}}" class="btn btn-primary">See More</a>
+            </div>
+        </div>
       </div>
+    </div>
   </div>
-    
 {{/each}}
 
 

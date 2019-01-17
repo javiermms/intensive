@@ -69,9 +69,4 @@ module.exports = (app) => {
           console.log(err);
         })
     })
-
-    // CONTACT
-    app.get('/contact', (req, res) => {
-        res.render('contact', {});
-    })
 }
